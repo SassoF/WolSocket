@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Control Panel</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center vh-100 bg-light">
+    <div class="container text-center p-4 bg-white rounded shadow-sm">
+        <h1 class="mb-4">Server Control Panel</h1>
+        <div class="d-grid gap-2 d-md-flex justify-content-center mb-4">
+            <button id="powerOnButton" class="btn btn-success btn-lg me-2">Power On</button>
+        </div>
+        <div id="resultPowerOn" class="mt-3 text-success fw-bold"></div>
+        <div id="resultPowerOff" class="mt-3 text-danger fw-bold"></div>
+        <hr>
+        <h2 class="mb-3">Connected Clients</h2>
+        <div id="clientList" class="list-group"></div>
+    </div>
+    <script src="/javascript/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
